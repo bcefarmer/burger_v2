@@ -1,0 +1,61 @@
+
+<div class = "container-fluid">
+
+<!-- LIST LABELS -->
+    <div class = "row">
+            <div class="col-6 burgerCol d-flex justify-content-center not-eaten" style="background-color: #299ab3; color: white; font-family: 'Architects Daughter', cursive">
+                <h2>Created</h2>
+            </div>
+
+            <div class="col-6 burgerCol d-flex justify-content-center eaten" style="background-color:#b32960; color: white; font-family: 'Architects Daughter', cursive;">
+                <h2>Devoured</h2>
+            </div>
+    </div>   
+
+<!-- LISTS -->
+    
+    <div class = "row">
+            <div class="col-6 burgerCol d-flex justify-content-center" id="leftColumn">
+            <!-- First ul: Burgers not devoured-->            
+                <ul class="burgerList mt-2" id="createdList">
+                    {{#each burgers}}   
+                    {{#unless devoured}}
+                    {{>burgers/burger-block devoured=0}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>      
+            </div>   
+            <div class="col-6 burgerCol d-flex justify-content-center" id="rightColumn">  
+            <!-- Second ul: Burgers ARE devoured-->  
+                <ul class="burgerList mt-2" id="destroyedList">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{>burgers/burger-block devoured=1}}
+                    {{/if}}    
+                    {{/each}}    
+                </ul>   
+            </div>   
+    </div>  
+
+<div class="row">
+    <div class="col-6">
+                <div class="container" style="position:relative">
+                <form class="form-inline">
+                        <div class="form-group col-xs-10">
+                        <textarea rows="2" id="burgerSubmission"></textarea>
+                        </div>
+                </form> 
+                <div class="row" style="position:relative">
+                    <div class="col-6 d-flex">
+                        <button type="button" style="position:absolute; color: white; font-family: 'Architects Daughter', cursive;" class="btn btn-default" id=submitBurger>Create Burger!!</button>
+                    </div>  
+                </div>
+    </div>
+    </div>
+
+<div class="col-6 d-flex justify-content-center">
+<button style="background-color:white; color: red; font-family: 'Architects Daughter', cursive; height: 40px; text-decoration:underline; border: none;" id="deleteButton">Delete All</button>
+</div>
+</div>
+</div>
+

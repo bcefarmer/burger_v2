@@ -1,0 +1,80 @@
+
+header{
+    border-bottom: 2px solid white;
+    
+}
+
+header h1{
+    font-size: 60px;
+    top: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+img{
+    opacity: 0.7;
+    
+}
+
+.eaten{
+    border-left: 1px solid white;
+}
+
+.not-eaten{
+    border-right: 1px solid white;
+}
+
+h2{
+    height: 32px;
+}
+
+#leftColumn{
+    border-right: 1px solid lavender;
+    border-bottom: 1px solid lavender;
+}
+
+#rightColumn{
+    border-left: 1px solid lavender;
+    border-bottom: 1px solid lavender;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin: 10px 0;
+      
+}
+
+.eat{
+    background-color: #b32960;
+    align-content: center;
+    font-size: 17px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    border-radius:25% 10%;
+}
+
+#destroyedList li button.eat{
+    display: none;
+}
+
+#submitBurger{
+    background-color: #b35229;
+    color: white;
+    height: auto;
+    width: auto;
+    
+}
+
+textarea{
+    width: 100%;
+    margin-top: 4%;
+    
+}
