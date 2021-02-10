@@ -1,4 +1,5 @@
-const connection = require("./connection");
+const connected = require("./connection");
+const connection = connected.connection;
 
 // ---------------------------------------
 
