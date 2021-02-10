@@ -1,4 +1,5 @@
 
+
 const makeBurgerBtn = document.getElementById("submitBurger");
 const devourBurgerBtn = document.querySelectorAll("button.eat");
 
@@ -98,6 +99,7 @@ const deleteBurgersBtn = document.getElementById("deleteButton");
       });
     });
   
+
 
 
 
