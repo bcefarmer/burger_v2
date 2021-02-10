@@ -32,6 +32,8 @@ Example:
 
 ![alt text](public/assets/img/data_attributes.jpg "List item data-attributes.")
 
+The Devour button makes an API call which updates the Boolean value "devoured" in the burgers database.  The CSS Display property for the devour button is changed to "none" in order to hide it once the devoured condition becomes "TRUE".  Finally, "Delete All" makes a delete call which wipes out all records in the burger database.
+
 Handlebars is used as a templating engine to generate list items containing the types of burgers the user creates.  This also allows the user to set the conditions that determine WHICH column the burger resides in.
 
 ## Storage
