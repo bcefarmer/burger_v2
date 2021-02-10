@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-    host: 'us-cdbr-east-03.cleardb.com',
-    port: 3306,
-    user:'bc72310d46fc46' ,
-    password: '81dd0646',
+    host: process.env.HOST_NAME,
+    port: process.env.PORT || 3606,
+    user: process.env.USER_NAME ,
+    password: process.env.PASSWORD,
     database: 'heroku_4172c875356108e'
 })
 
