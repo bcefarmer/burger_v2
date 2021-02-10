@@ -5,7 +5,7 @@
 
 # Deployed Application
 
-(frozen-headland-15541.herokuapp.com)
+(https://www.frozen-headland-15541.herokuapp.com)
 
 # Description
 
