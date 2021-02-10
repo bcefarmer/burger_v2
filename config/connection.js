@@ -1,12 +1,17 @@
 const mysql = require("mysql");
+if(process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL)
+}
+    else {
+         connection = mysql.createConnection({
+          host: process.env.HOST_NAME,
+          user: process.env.USER_NAME,
+          password: process.env.P_W,
+          database: 'burgers_db'
+        });
+      };
 
-const connection = mysql.createConnection({
-    host: process.env.HOST_NAME,
-    port: process.env.PORT || 3606,
-    user: process.env.USER_NAME ,
-    password: process.env.PASSWORD,
-    database: process.env.DB_NAME
-})
+     
 
 connection.connect((err) => {
     if(err){
@@ -19,4 +24,4 @@ connection.connect((err) => {
 
 });
 
-module.exports = connection;
+module.exports = {connection}
